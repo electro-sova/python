@@ -118,7 +118,7 @@ def six_default(list):
         return list
 
 
-def six_reverse(list):  # ДОДЕЛАТЬ!
+def six_reverse(list):  
     min = []
     mid = []
     max = []
