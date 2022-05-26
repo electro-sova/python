@@ -118,12 +118,12 @@ def six_default(list):
         return list
 
 
-def six_reverse(list):  
+def six_default(list):
     min = []
     mid = []
     max = []
     if len(list) > 1:
-        item = list[-1]
+        item = list[0]
         for x in list:
             if x < item:
                 min.append(x)
@@ -131,9 +131,6 @@ def six_reverse(list):
                 mid.append(x)
             elif x > item:
                 max.append(x)
-        return six_reverse(min) + mid + six_reverse(max)
+        return six_default(min) + mid + six_default(max)
     else:
         return list
-
-
-six_reverse(list=[8, 4, 9, 52, 15, 24])
