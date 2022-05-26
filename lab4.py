@@ -134,3 +134,16 @@ def six_default(list):
         return six_default(min) + mid + six_default(max)
     else:
         return list
+    
+    
+    def sixth():
+     array = [5, 2, -14, 10, 14, 0, 1, 3]
+     a = input("Введите 1, если по возрастанию, 2 - по убыванию: ")
+     if a == '1':
+       quicksort(array, 0, len(array))
+        print(array)
+    if a == '2':
+        quicksort(array, 0, len(array))
+         array.sort(reverse=True)
+         print(array)
+
